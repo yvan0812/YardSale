@@ -47,6 +47,11 @@
             justify-self: center;
             display: none;
         }
+        .logo_email{
+            width: 100px;
+            margin-bottom: 48px;
+            justify-self: center;
+        }
         .title{
             font-size:var(--lg) ;
             margin-bottom: 12px;
@@ -60,6 +65,14 @@
             margin-top: 0;
             font-weight: 300;
         }
+        .subtitle2{
+            font-size:var(--md) ;
+            margin-bottom: 32px;
+            text-align: center;
+            color: var(--very-light-pink);
+            margin-top: 30px;
+            font-weight: 300;
+        }
 
         .form{
             display: flex;
@@ -71,14 +84,7 @@
             margin-bottom: 4px;
         }
 
-        .input{
-            background-color: var(--very-light-pink);
-            border: none;
-            border-radius: 8px;
-            height: 30px;
-            padding: 6px;
-            font-size: var(--sm);
-        }
+
 
         .login-button{
             background-color: var(--Hospital-green);
@@ -98,6 +104,9 @@
             box-shadow: 0 4px 16px rgb(49, 172, 111);
             transition: all 0.2s ease;
         }
+        .link{
+            color: var(--Hospital-green);
+        }
 
 
         @media (max-width: 640px){
@@ -113,19 +122,17 @@
 
     <div class="login">
         <div class="form-container">
-                <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-                <h1 class="title">Create a new password</h1>
-                <p class="subtitle">Enter a new password for your account</p>
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-            <form action="/" class="form">
-                <label for="password" class="label">password</label>
-                <input type="password" id="password" placeholder="***********" class="input input-password">
-        
-                <label for="new-password" class="label">password</label>
-                <input type="password" id="new-password" placeholder="***********" class="input input-password">
-        
-                <input type="submit" value="Login" class="primary-button login-button">
-            </form>
+                <h1 class="title">Email has been sent!</h1>
+                <p class="subtitle">Please check your inbox for intructions on ow to request the password</p>
+                <img src="./icons/email.svg" alt="logo" class="logo_email">
+                <button class="primary-button login-button">Login</button>
+
+
+                <p class="subtitle2">Don´t recive that email? <a href="www.resetn.com" class="link">Resend</a></p>
+
+
         </div>
     </div>
     
