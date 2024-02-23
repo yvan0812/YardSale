@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        :root{
+            --very-light-pink: #C7C7C7;
+            --Text-input-field:#F7F7F7;
+            --Hospital-green: #ACD9B2;
+            --Dark: #232830;
+            --Black:#000000;
+            --white:#ffffff;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body{
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        justify-content: center;
+                    border: solid;
+
+        }
+        .product-info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 350px;
+            height: 800px;
+        }
+        .product-info p{
+            color: var(--very-light-pink);
+            
+        }
+        .product-info p:nth-child(3){
+            color: var(--Blackk);
+            font-weight: bold;
+
+        }
+        .bike{
+            width: 350px;
+            height: 250px;
+            border-radius: 0 0 10% 10%;
+
+        }
+    .primary-button {
+    background-color: var(--Hospital-green);
+    color: #F7F7F7;
+    border: none;
+    border-radius: 8px;
+    margin-top: 12px;
+    height: 70px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    width: 320px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    }
+    .icon-close{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: var(--white);
+        border-radius: 50%;
+        margin: 15px;
+        cursor: pointer;
+    }
+    @media (max-width: 640px){
+        .product-info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+         }
+    }
+   
+    
+    
+    </style>
+</head>
+<body>
+
+    <aside class="product-info">
+        <img src="./icons/icon_close.png" alt="" class="icon-close">
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="bike">
+
+    
+        <p>$120.00</p>
+        <p>Bike</p>
+        <p> With its functional and practical design, this bike also fulfills a decorative function, adding personality and a retro-vintage aesthetic to your house</p>
+        <button class="primary-button"><img src="./icons/bt_add_to_cart.svg" alt=""> Add to cart</button>
+    </aside>
+    
+</body>
+</html>
